@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<convocatorias>
+  <presencial>
+    <fecha>25/01/2022</fecha>
+    <hora>8:00</hora>
+    <temario>Arduino</temario>
+    <asignatura>Entornos de Desarrollo</asignatura>
+
+  </presencial>
+  <online>
+    <fecha>25/01/2022</fecha>
+    <hora>8:00</hora>
+    <temario>Arduino</temario>
+    <asignatura>Entornos de Desarrollo</asignatura>
+
+  </online>
+  <pagado>
+    <fecha>25/01/2022</fecha>
+    <hora>8:00</hora>
+    <temario>Arduino</temario>
+    <asignatura>Entornos de Desarrollo</asignatura>
+    <datos>Pagando te reagalos el aprobado pero no se lo cuentes a los demas</datos>
+  </pagado>
+
+</convocatorias>

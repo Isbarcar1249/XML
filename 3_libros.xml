@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding= "UTF-8"?>
+<libros>
+  <libro1 nom="Lib1">
+    <titulo>Libro muchos autores </titulo>
+    <autor>Antonio Moetchandon</autor>
+    <autor> Jonny Walker</autor>
+    <autor>Abosulut vodka</autor>
+    <idioma>Español </idioma>
+    <paginas>200</paginas>
+    <tematica>Alcoholicos anónimos </tematica>
+  </libro1>
+  <libro2 nom="lib2">
+    <titulo>Anything you can do </titulo>
+    <autor>Don perignon</autor>
+    <idioma>Ingles </idioma>
+    <paginas>150</paginas>
+    <tematica>Aventuras </tematica>
+
+  </libro2>
+  <libro3 nom="lib3">
+    <titulo>Hurones</titulo>
+    <autor>Ismaeliyo el crak</autor>
+    <idioma>Andaluh </idioma>
+    <paginas>50</paginas>
+    <tematica>Hasta luego sardinilla suerte en tu nueva casa</tematica>
+
+  </libro3>
+
+
+</libros>
+<llibrero>
+  hola
+</llibrero>
