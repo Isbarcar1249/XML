@@ -8,5 +8,5 @@
 <!ELEMENT descripcion(#PCDATA)>
 <!ELEMENT cantidad(#PCDATA)>
 <!ELEMENT precio(#PCDATA)>
-<!ELEMENT total>
+<!ELEMENT total EMPTY>
 <!ATTLIST valor NMTOKEN #REQUIRED>
