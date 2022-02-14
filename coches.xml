@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!DOCTYPE coches SYSTEM "cuatro.dtd">
+<!DOCTYPE coches SYSTEM "coches.dtd">
 <concesionario>
         <coche nBastidor="VF7LC9HXw9Y742817">
                 <grupo nombre="bmwgroup" clave="1"></grupo>
