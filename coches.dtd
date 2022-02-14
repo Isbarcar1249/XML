@@ -1,0 +1,17 @@
+<!ELEMENT concesionario(coche+)>
+<!ELEMENT coche(grupo,marca,motor,puertas,extras,precio)>
+<!ATTLIST nBastidor CDATA #REQUIRED>
+<!ELEMENT grupo>
+<!ATTLIST nombre CDATA REQUIRED>
+<!ATTLIST CLAVE NMTOKEN REQUIRED>
+<!ELEMENT marca (nombreM,modelo)>
+<!ATTLIST grupo NMTOKEN REQUIRED>
+<!ELEMENT nombreM (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+
+<!ELEMENT motor(cilindrada,caballos,combustible)>
+<!ELEMENT cilindrada (#PCDATA)>
+<!ELEMENT caballos (#PCDATA)>
+<!ELEMENT  combustible (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST moneda #REQUIRED>

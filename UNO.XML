@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding= "UTF-8"?>
-<asignaturas  >
+<!--<?xml-stylesheet type="text/css" href="uno.css"?>-->
+
+<!-- DTD: definiciones de tipo de documento->
+Especifica la estructura del XML.
+Incluye: Elementos que pueden aparecer, donde pueden aparecer,
+el contenido y los atributos.
+<!DOCTYPE []>
+-->
+<!DOCTYPE asignaturas SYSTEM "uno.dtd">
+<asignaturas>
   <asignatura nom="LM">
     <nombre> Lenguaje de Marcas</nombre>
     <horas> 4 </horas>
   </asignatura>
-  <asignaturas>
+
     <asignatura nom="ED">
       <nombre> Entornos de Desarrollo </nombre>
       <horas> 3 </horas>
-    </asignatura>
-    <signos> &lt; &gt; &amp; &apos; &quot; </signos>
-  </asignaturas>
+  </asignatura>
+    <!--<signos> &lt; &gt; &amp; &apos; &quot; </signos>-->
+</asignaturas>

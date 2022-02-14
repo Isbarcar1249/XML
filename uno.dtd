@@ -1,0 +1,9 @@
+<!ELEMENT asignaturas(asignatura)>
+<!ELEMENT asignatura(nombre,horas)>
+<!ATTLIST asignatura nombre CDATA #REQUIRED>
+
+<!ELEMENT nombre(#PCDATA)>
+<!ELEMENT horas(#PCDATA)>
+
+<!ATTLIST asignatura nom (hulio|miguel|
+bonifacio) #REQUIRED>
