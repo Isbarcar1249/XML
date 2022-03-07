@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuario
+    xmlns:xsi="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\cinco.xml"
+    xsi:noNamespaceSchemaLocation="cinco.xsd">
+  <nombre>Ismael</nombre>
+  <apellido>Barranco</apellido>
+  <edad>22</edad>
+  <contrasena>1234a</contrasena>
+  <color>Amarillo</color>
+</usuario>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\cinco.xsd">
+    <xs:element name="usuario" type="Tusuario"/>
+      <xs:complextype name="Tusuario">
+        <xs:secuence>
+            <xs:element name="nombre" type="Tnombre"/>
+            <xs:element name="apellido" type="Tapellido"/>
+            <xs:element name="edad" type="Tedad"/>
+            <xs:element name="contraseña" type="Tcontraseña"/>
+            <xs:element name="color" type="Tcolor"/>
+          </xs:secuence>
+      </xs:complextype>
+
+      <xs:simpleType name="Tnombre">
+        <xs:restriction base="xs:string"/>
+
+      </xs:simpleType ><xs:simpleType name="Tapellido">
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType >
+
+      <xs:simpleType name="Tedad">
+        <xs:restriction base="xs:interger"/>
+          <xs:minInclusive value="18"/>
+          <xs:maxInclusive value="99"/>
+        </xs:restriction >
+      </xs:simpleType >
+
+      <xs:simpleType name="Tcontraseña">
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType >
+
+    <xs:simpleType name="Tletra">
+        <xs:restriction base="xs:string">
+        <xs:pattern value="[a-z]"/>
+		</xs:restriction>
+
+      <xs:simpleType name="Tcolor">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="azul"/>
+          <xs:enumeration value="verde"/>
+          <xs:enumeration value="amarillo"/>
+          <xs:enumeration value="rojo"/>
+        </xs:restriction >
+      </xs:simpleType >
+
+
+
+
+</xs:schema>
+
+1- precio minimo 6 y maximo 23,99
+ <xs:simpleType name="Tprecio">
+    <xs:restriction base="xs:interger"/>
+      <xs:minInclusive value="6"/>
+      <xs:maxInclusive value="23.99"/>
+    </xs:restriction >
+  </xs:simpleType >
+2- numero maximo 999 (hay dos formas)
+  <xs:simpleType name="Tnumero">
+      <xs:restriction base="xs:interger"/>
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="999"/>
+      </xs:restriction >
+    </xs:simpleType >
+3- coche tipo de combustible
+    <xs:simpleType name="Tcombustible">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="gasoil"/>
+        <xs:enumeration value="gasolina"/>
+        <xs:enumeration value="electrico"/>
+        <xs:enumeration value="gas"/>
+      </xs:restriction >
+    </xs:simpleType >
+4 nombre tamaño maximo 20 caracteres
+    <xs:simpleType name="Nombre">
+        <xs:restriction base="xs:string">
+          <xs:maxLegnth value="20"/>
+    </xs:simpleType >
+
+    <!-- Patrones:
+    	[a-z] => Entre a y z.
+    	[A-Z] => Entre A y Z.
+    	[0-9999][A-Z]{3} => Matrícula.
+    	[A-D]{4,} = [ABCD] = [AB-D] = [A|B|C|D] => Tipo test 4 opciones.
+    	. => Cualquier caracter.
+    	\d => Cualquier dígito.
+    	\D => Cualquier NO dígito.
+    -->
+    1.
+Ejercicio 1, Ejercicio 2, Ejercicio 3... [Numero hasta dos dígitos] -> Otra forma!
+<xs:simpleType name="Ejercicio1">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[Ejercicio][0-9][0-9]">
+</xs:simpleType>
+2. Dos caracteres, el primero un número y el segundo una letra.
+<xs:simpleType name="Ejercicio2">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9][a-z]">
+</xs:simpleType>
+3.
+Dos caracteres, el primero mayuscula y el segundo una no sea un dígito.
+<xs:simpleType name="Ejercicio3">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][\D]">
+</xs:simpleType>
+4. "Holaaaaaa" con mínimo una "a".
+<xs:simpleType name="Ejercicio4">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[Hol][a]*">
+</xs:simpleType>
+5. "Caaaaaraaaacoooolaaaa" con mínimo dos volcales cada vez.
+<xs:simpleType name="Ejercicio5">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[Ca][a]+[ra][a]+[co][o]+[la][a]+">
+</xs:simpleType>
+6. [EX de examen | dos letras por asignatura | los 6 digitos de una fecha] Ej. "EXlm120121".
+<xs:simpleType name="Ejercicio6">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[Ex][a-z]{2}[0-12][0-31][0-9999]">
+</xs:simpleType>
