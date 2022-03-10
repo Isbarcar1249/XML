@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding "UTF-8">
+<datos
+    xmlns:xsi="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\seis.xml"
+    xsi:noNamespaceSchemaLocation="seis.xsd">
+
+
+<datos>
+  <persona numero="1">
+</datos>
