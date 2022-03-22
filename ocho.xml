@@ -1,0 +1,54 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<ddddddddddddddddd xmlns:xsi="C:\Users\PC\Desktop\PdCJ1DAW\LENGUAJE DE MARCAS\XML\XSD\CELDAS.xsd" xsi:noNamespaceSchemaLocation="CELDAS.xsd">
+
+<empresa nombre="ECI" NTrabajadores="8">
+    <sector> Tecnología </sector>
+
+  <departamento>
+      <administracion codigoDep="ADMIN">
+          <trabajador rango="Jefe">
+              <nombre> Ana </nombre>
+              <apellido> Peña </apellido>
+              <baja/>
+              <salario> 6000 </salario>
+              <usuario nUsuario="anapea" clave="46322jken2"/>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre> José </nombre>
+              <apellido> López </apellido>
+              <salario> 2000 </salario>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre> Luís </nombre>
+              <apellido> Núñez </apellido>
+              <salario> 1800 </salario>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre> Martín </nombre>
+              <apellido> Martín </apellido>
+              <baja/>
+              <salario> 1800 </salario>
+          </trabajador>
+      </administracion>
+
+      <informatica codigoDep="INFOR">
+          <trabajador rango="Jefe">
+              <nombre> Lucas </nombre>
+              <apellido> Sorda </apellido>
+              <salario> 6500 </salario>
+              <usuario nUsuario="lucsor" clave="84iejd98d3"/>
+          </trabajador>
+
+          <trabajador rango="empleado">
+              <nombre> Elena </nombre>
+              <apellido> Hernández </apellido>
+              <salario> 4500 </salario>
+          </trabajador>
+      </informatica>
+
+    </departamento>
+
+  </empresa>
