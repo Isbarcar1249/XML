@@ -4,11 +4,13 @@
     <xs:element name="usuario" type="Tusuario"/>
       <xs:complextype name="Tusuario">
         <xs:secuence>
-            <xs:element name="nombre" type="Tnombre"/>
+            <xs:element name="nombre" type="Tnombre" default="Ismael"/>
+            <xs.attributte name="tipo" type="xs:string" use="required"/>
             <xs:element name="apellido" type="Tapellido"/>
             <xs:element name="edad" type="Tedad"/>
-            <xs:element name="contraseña" type="Tcontraseña"/>
+            <xs:element name="contraseña" type="Tcontraseña" fixed="asdf12"/>
             <xs:element name="color" type="Tcolor"/>
+            <xs:element name="letra" type="Tletra"/>
           </xs:secuence>
       </xs:complextype>
 

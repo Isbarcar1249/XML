@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\seis.xsd">
+
+  <xs:element name="datos" type="Tdatos"/>
+    <xs:complexType name="Tdatos">
+      <xs:element name="persona" type="Tpersona"/>
+      <xs:complexType name="Tpersona">
+        <xs:secuence>
+          <xs:element name="nombre" type="Tstring"/>
+          <xs:element name="edad" type="Tedad"/>
+          <xs:element name="ciudad" type="Tstring" minOccurs="0"/>
+
+        </xs:secuence>
+      </xs:complexType>
+    </xs:complexType>
+    <xs:simpleType name="Tstring">
+      <xs:restriction base="xs:string"/>
+        <xs:whiteSpace value="perserve"/>
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Tedad">
+      <xs:restriction base="xs:interger">
+        <xs:minInclusive value="0"/>
+        <xs:maxInclusive value="130"/>
+      </xs:restriction>
+    </xs:simpleType>
+</xs:schema>h

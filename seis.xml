@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding "UTF-8">
+<?xml version="1.0" encoding "UTF-8"?>
 <datos
     xmlns:xsi="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\seis.xml"
     xsi:noNamespaceSchemaLocation="seis.xsd">
+    <!DOCTYPE datos SYSTEM "seis.dtd">
 
 
 <datos>
   <persona numero="1">
+    <nombre>Ismael  </nombre>
+    <edad>23</edad>
+    <ciudad>Martos</ciudad>
+  </persona>
+
 </datos>

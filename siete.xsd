@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="C:\Users\ismae\OneDrive\Desktop\grado superior DAM\Github-Atom\XML\siete.xsd">
+  <xs:element name="aeropuerto" type ="Taeropuerto"/>
+    <xs:complexType name="Taeropuerto">
+      <xs:all>
+        <xs:element name="fecha" type="xs:date"/>
+        <xs:element name="vuelo" type="Tvuelo" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:all>
+    </xs:complexType >
+
+    <xs:complexType name="Tvuelo">
+        <xs:secuence>
+          <xs:element name="diario" minOccurs="0" />
+          <xs:element name="orgigen" type="xs:string"/>
+          <xs:element name="destino" type="Tstring"/>
+          <xs:element name="h_salida" type="xs:time"/>
+          <xs:element name="h_llegada" type="xs:time"/>
+        </xs:secuence>
+        <xs:attribute name="codigo" type="xs:ID" use="required"/>
+        <xs:attribute name="estado" default="E" type="Testado"/>
+
+
+    <xs:complexType>
+      <xs:sympleType name="Testado" >
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[CER]"/>
+        </xs:restriction >
+      </xs:sympleType>
+
+</xs:schema>
