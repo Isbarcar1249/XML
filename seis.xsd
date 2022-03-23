@@ -24,4 +24,4 @@
         <xs:maxInclusive value="130"/>
       </xs:restriction>
     </xs:simpleType>
-</xs:schema>h
+</xs:schema>

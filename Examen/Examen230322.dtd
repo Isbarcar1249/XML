@@ -1,0 +1,20 @@
+<!ELEMENT factura(num,fecha,datosEmisor,datosCliente,detallesFactura)+>
+  <!ELEMENT num #PCDATA #REQUIRED>
+  <!ELEMENT fecha #PCDATA #REQUIRED>
+<!ELEMENT datosEmisor (nombre,CIF,telefono)>
+  <!ELEMENT nombre #PCDATA #REQUIRED>
+  <!ELEMENT CIF #PCDATA #REQUIRED>
+  <!ELEMENT telefono #PCDATA #REQUIRED>
+<!ELEMENT datosCliente (nombre,CIF,telefono)>
+  <<!ELEMENT nombre #PCDATA #REQUIRED>
+  <!ELEMENT CIF #PCDATA #REQUIRED>
+  <!ELEMENT telefono #PCDATA #REQUIRED>
+<!ELEMENT detallesFactura(codArticulo,importe)>
+  <!ELEMENT codArticulo(descripcion+,cantidad+,oferta+,PVP+)
+  <!ATTLIST codigo CDATA #REQUIRED>
+  <!ATTLIST tipo CDATA #REQUIRED>
+  <!ELEMENT descripcion #PCDATA #REQUIRED>
+  <!ELEMENT cantidad #PCDATA #REQUIRED>
+  <!ELEMENT oferta #PCDATA #REQUIRED>
+  <!ELEMENT PVP #PCDATA #REQUIRED>
+  <!ELEMENT importe #PCDATA #REQUIRED>

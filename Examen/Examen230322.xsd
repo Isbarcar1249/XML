@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="C:\Users\ismae\github\XML\Examen230322.xsd">
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:all>
+        <xs:element type="xs:integer" name="num" minInclusive="1" use="required"/>
+        <xs:element type="xs:date" name="fecha" use="required"/>
+        <xs:element name="datosEmisor">
+          <xs:complexType>
+            <xs:all>
+              <xs:element type="Ttexto" name="nombre" use="required"/>
+              <xs:element type="Tcif" name="CIF" use="required"/>
+              <xs:element type="Ttelefono" name="telefono" use="required"/>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="datosCliente">
+          <xs:complexType>
+            <xs:all>
+              <xs:element type="Ttexto" name="nombre" use="required"/>
+              <xs:element type="Ttexto" name="CIF" use="required"/>
+              <xs:element type="xs:int" name="telefono" use="required"/>
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="detallesFactura">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codArticulo" maxOccurs="unbounded" minOccurs="0" use="required">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="Ttexto" name="descripcion" use="required"/>
+                    <xs:element type="xs:float" name="cantidad" use="required"/>
+                    <xs:element type="xs:bool" name="oferta" use="required"/>
+                    <xs:element type="Tprecio" name="PVP" use="required"/>
+                  </xs:sequence>
+                  <xs:attribute type="Ttexto" name="codigo" use="required"/>
+                  <xs:attribute type="Ttipo" name="tipo" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="Tprecio" name="importe" use="required"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="Ttipo">
+      <xs:restriction base="xs:string">
+          <xs:enumeration value="Libro"/>
+          <xs:enumeration value="Comic"/>
+          <xs:enumeration value="Manga"/>
+          <xs:enumeration value="Manual"/>
+          <xs:enumeration value="Audiovisual"/>
+          <xs:enumeration value="Otros"/>
+      </xs:restriction>
+  </xs:simpleType>
+  <xs.simpleType name="Ttexto">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/>
+      <xs:maxLegnth value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Ttelefono">
+      <xs:restriction base="xs:int">
+        <xs:pattern value="[0-9]{9}"/>
+      </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tcif">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{8}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Tprecio">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="5"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+
+</xs:schema>

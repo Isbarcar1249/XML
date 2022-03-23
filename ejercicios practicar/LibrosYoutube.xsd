@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="C:UsersismaeOneDriveDesktopgrado superior DAMGithub-AtomXML$0">
+  <xs:element name="libros">
+    <xs:complexType>
+      <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+          <xs:secuence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="fechaPubli" type="xs:date"/>
+            <xs:element name="ref" type="xs:string"/>
+            <xs:element name="precio" type="xs:interger"/>
+          </xs:secuence>
+      </xs:element>
+    </xs:complexType>
+  </xs:element>

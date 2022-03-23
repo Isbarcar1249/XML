@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<factura xmlns:xsi="C:\Users\ismae\github\XML\Examen230322.xml"
+  xsi:noNamespaceSchemaLocation="Examen230322.xsd">
+<!DOCTYPE factura SYSTEM "Examen230322.dtd">
+  <num>2</num>
+  <fecha>23/03/2022</fecha>
+  <datosEmisor>
+    <nombre>Libreria</nombre>
+    <CIF>12345678A</CIF>
+    <telefono>666111222</telefono>
+  </datosEmisor>
+  <datosCliente>
+    <nombre>Biblioteca</nombre>
+    <CIF>98765432B</CIF>
+    <telefono>666333444</telefono>
+  </datosCliente>
+  <detallesFactura>
+      <codArticulo codigo="ART226" tipo="Libro">
+        <descripcion>El color de la magia -Terry Pratchet</descripcion>
+        <cantidad> 2 </cantidad>
+        <oferta>NO</oferta>
+        <PVP>12,95</PVP>
+      </codArticulo>
+      <codArticulo codigo="ART925" tipo="Comic">
+        <descripcion>Batman La broma asesina - Alaan Moore</descripcion>
+        <cantidad> 1 </cantidad>
+        <oferta>SI</oferta>
+        <PVP>17,9</PVP>
+      </codArticulo>
+      <importe>30,85</importe>
+
+  </detallesFactura>
+
+</factura>
